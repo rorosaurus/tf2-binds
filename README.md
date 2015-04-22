@@ -1,6 +1,6 @@
 # TF2binds
 
-This is a mapping of custom keybinds for Team Fortress 2. Includes class-specific binds.
+This is a template mapping of custom keybinds for Team Fortress 2. Includes class-specific binds.
 
 ### Applying to TF2 on Windows
 Copy the CustomBinds directory into this directory:  
@@ -16,6 +16,6 @@ The subdirectory in `~\custom\CustomBinds\` is called `cfg`. This tells TF2 whic
 
 The file `autoexec.cfg` overrides `config.cfg` from `~\tf\cfg\`. You can put custom binds and scripts in `autoexec.cfg` to your liking. This will be a 'global' custom bind/script configuration that affects all classes. 
 
-There are also `.cfg` files for each individual class as well as possibly a few special scripts that are called by other ones. A special `reset.cfg` script exists for restoring global binds when changing between classes which have unique, class-specific binds.
+There are also `*.cfg` files for each individual class as well as possibly a few special scripts that are called by other ones. A special `reset.cfg` script exists for restoring global binds when changing between classes which have unique, class-specific binds.
 
 Go to [r/TF2scripts](https://www.reddit.com/r/tf2scripts), the [teamfortress wiki](https://wiki.teamfortress.com/wiki/Scripting) or [google](https://www.google.com/) for guides and information on scripting.
