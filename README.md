@@ -43,7 +43,7 @@ This is where it gets a little bit confusing. If you switch to a different class
 1. A line to bind G to a different action in the config file for that class
 2. A line to restore the 'default' configuration from `autoexec.cfg` before applying class-specific binds
  
-Option 1 will explicitly rebind G to the desired action. You may want this if G will perform a unique action for each class. However, it is not recommended that you explicitly rebind G to its original action if you just want to restore it to the 'default' value from `autoexec.cfg`. There is an easier way.
+Option 1 will explicitly rebind G to the desired action. You may want this if G will perform a unique action for each class. However, it is not recommended that you explicitly rebind G if you just want to restore it to the 'default' value from `autoexec.cfg`. There is an easier way.
 
 Option 2 requires the addition of only one line to the top of each class config file (example given for scout):
 
