@@ -16,9 +16,12 @@ The subdirectory in `~\custom\CustomBinds\` is called `scripts`. This tells TF2 
 
 `autoexec.cfg` should start out as a copy of the default `config.cfg` from `~\tf\config\`. From there, you can modify `autoexec.cfg` to your liking with all the binds you want to have. This will be a 'global' custom bind configuration that affects all classes.
 
-You can also customize binds for individual classes to override individual 'default' bind behavior set by `autoexec.cfg`. For example, if you just want a special bind for the Medic class which announces to the team that you have an Ubercharge ready that you want to assign to the G key, you would create another `.cfg` file called `medic.cfg`.
+### Custom binds for individual classes
+You can also customize binds for individual classes to override individual 'default' bind behavior set by `autoexec.cfg`. For example, if you just want a special bind for the Medic class which announces to the team that you have an Ubercharge ready that you want to assign to the G key, you would create another `.cfg` file in `~\custom\CustomBinds\scripts\` called `medic.cfg`. This config script will execute when you first select or switch to the Medic class.
 
 ```
 // medic.cfg
 bind g "say_team Ubercharge ready!"
 ```
+
+This is where it gets a little bit confusing. If you switch to a different class,
