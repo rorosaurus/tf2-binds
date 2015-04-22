@@ -38,7 +38,7 @@ For example, if you just want a special bind for the Medic class which announces
 bind g "say_team Ubercharge ready!"
 ```
 
-This is where it gets a little bit confusing. If you switch to a different class, G will still be bound to `"say_team Ubercharge ready!"`. It was been overridden by `medic.cfg`. Switching to any other class will not automatically override it back to its default bind from `autoexec.cfg`, unless the class you switch to has one of two things:
+This is where it gets a little bit confusing. If you switch to a different class, G will still be bound to `"say_team Ubercharge ready!"` because it was overridden by `medic.cfg`. Switching to any other class will not automatically override G back to its 'default' bind from `autoexec.cfg`, unless the class you switch to has one of two things:
 
 1. A line in the config file for that class to bind G to a different action
 2. A line in the config file for that class to restore the 'default' configuration from `autoexec.cfg` before applying class-specific binds
