@@ -12,65 +12,8 @@ Then launch TF2.
 ### How it works
 TF2 parses your `~\tf\custom` folder for custom content (sounds, models, scripts, etc). Each subfolder in the `custom` directory represents an individual mod. In effect, CustomBinds is a mod for TF2's `~\tf\cfg\config.cfg`.
 
-The subdirectory in `~\custom\CustomBinds\` is called `scripts`. This tells TF2 which content folder under `~\tf\` will be modified. In `~\custom\CustomBinds\cfg\`, you will find all the `*.cfg` files that modify TF2's default keybind configuration.
+The subdirectory in `~\custom\CustomBinds\` is called `cfg`. This tells TF2 which content folder under `~\tf\` will be modified. In `~\custom\CustomBinds\cfg\`, you will find all the `*.cfg` files that modify TF2's default keybind configuration.
 
-`autoexec.cfg` should start out as a copy of the default `config.cfg` from `~\tf\cfg\`. From there, you can modify `autoexec.cfg` to your liking with all the binds you want to have. This will be a 'global' custom bind configuration that affects all classes.
+The file `autoexec.cfg` overrides `config.cfg` from `~\tf\cfg\`. You can put custom binds and scripts in `autoexec.cfg` to your liking. This will be a 'global' custom bind/script configuration that affects all classes.
 
-### Custom binds
-A basic keybind is assigned with the following syntax:
-
-```
-// bind <key> <action>
-
-// Pressing G will say "lol" in global chat for the following bind:
-bind G "say lol"
-
-// Actions can be chained so a bind will can more than one thing.
-// The bind below say "lol" in the global chat and then the playermodel will taunt
-bind G "say lol; taunt"
-
-// Aliases can be created for one or more actions to help condense commands:
-alias Laugh_And_Taunt "say lol; taunt"
-bind G Laugh_And_Taunt
-```
-
-Go on [r/TF2scripts](https://www.reddit.com/r/tf2scripts), the [teamfortress wiki](https://wiki.teamfortress.com/wiki/Scripting) or [google](https://www.google.com/) for more guides and information.
-
-### Custom binds for individual classes
-You can also customize binds for individual classes to override individual 'default' bind behavior set by `autoexec.cfg`. In this situation, the possible class files are named as follows:
-
-```
-scout.cfg
-soldier.cfg
-pyro.cfg
-demoman.cfg
-heavyweapons.cfg
-engineer.cfg
-medic.cfg
-sniper.cfg
-spy.cfg
-```
-
-For example, if you just want a special bind for the Medic class which announces to the team that you have an Ubercharge ready that you want to assign to the G key, you would create a `.cfg` file in `~\custom\CustomBinds\cfg\` called `medic.cfg`. This config script will execute when you first select or switch to the Medic class. It is recommended, for reasons elaborated below, that you create the `.cfg` files for all classes pre-populated with at least one special command.
-
-```
-// medic.cfg
-bind g "say_team Ubercharge ready!"
-```
-
-This is where it gets a little bit confusing. If you switch to a different class, G will still be bound to `"say_team Ubercharge ready!"` because it was overridden by `medic.cfg`. Switching to any other class will not automatically override G back to its 'default' bind from `autoexec.cfg`, unless the class you switch to has one of two things:
-
-1. A line in the config file for that class to bind G to a different action
-2. A line in the config file for that class to restore the 'default' configuration from `autoexec.cfg` before applying class-specific binds
- 
-Option 1 will explicitly rebind G to the desired action. You may want this if G will perform a unique action for each class. However, it is not recommended that you explicitly rebind G if you just want to restore it to the 'default' value from `autoexec.cfg`. There is an easier way.
-
-Option 2 requires the addition of only one line to the top of each class config file (example given for scout):
-
-```
-// scout.cfg
-exec autoexec.cfg
-bind j "say_team I got a bucket of chicken."
-```
-
-If you switch to scout from medic, G will no longer be bound to `"say_team Ubercharge ready!"` from `medic.cfg`. `exec autoexec.cfg` will restore all binds to their 'defaults' given in `autoexec.cfg`. Also, J will now be bound to `"say_team I got a bucket of chicken."`
+Go to [r/TF2scripts](https://www.reddit.com/r/tf2scripts), the [teamfortress wiki](https://wiki.teamfortress.com/wiki/Scripting) or [google](https://www.google.com/) for more guides and information on scripting.
