@@ -22,14 +22,14 @@ A basic keybind is assigned with the following syntax:
 ```
 // bind <key> <action>
 
-// Pressing G will put the text "lol" in global chat for the following bind:
+// Pressing G will say "lol" in global chat for the following bind:
 bind G "say lol"
 
-// Actions can be chained so a keypress will do more than one thing.
-// The bind below will put "lol" in the global chat and then the playermodel will immediately taunt
+// Actions can be chained so a bind will can more than one thing.
+// The bind below say "lol" in the global chat and then the playermodel will taunt
 bind G "say lol; taunt"
 
-// Aliases can be created for one or more actions:
+// Aliases can be created for one or more actions to help condense commands:
 alias Laugh_And_Taunt "say lol; taunt"
 bind G Laugh_And_Taunt
 ```
