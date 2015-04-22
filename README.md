@@ -40,8 +40,8 @@ bind g "say_team Ubercharge ready!"
 
 This is where it gets a little bit confusing. If you switch to a different class, G will still be bound to `"say_team Ubercharge ready!"`. It was been overridden by `medic.cfg`. Switching to any other class will not automatically override it back to its default bind from `autoexec.cfg`, unless the class you switch to has one of two things:
 
-1. A line to bind G to a different action in the config file for that class
-2. A line to restore the 'default' configuration from `autoexec.cfg` before applying class-specific binds
+1. A line in the config file for that class to bind G to a different action
+2. A line in the config file for that class to restore the 'default' configuration from `autoexec.cfg` before applying class-specific binds
  
 Option 1 will explicitly rebind G to the desired action. You may want this if G will perform a unique action for each class. However, it is not recommended that you explicitly rebind G if you just want to restore it to the 'default' value from `autoexec.cfg`. There is an easier way.
 
