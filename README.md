@@ -1,15 +1,15 @@
-TF2binds
-========
-**A mapping of custom keybinds for Team Fortress 2. Includes class-specific binds.**
+# TF2binds
 
-*Windows*:  
+This is a mapping of custom keybinds for Team Fortress 2. Includes class-specific binds.
+
+### Applying to TF2 on Windows
 Copy the CustomBinds directory into this directory:  
 ```
 C:\Program Files (x86)\Steam\SteamApps\common\Team Fortress 2\tf\custom
 ```
 Then launch TF2.  
 
-*How it works*:  
+### How it works
 TF2 parses your `~\tf\custom` folder for custom content (sounds, models, scripts, etc). Each subfolder in the `custom` directory represents an individual mod. In effect, CustomBinds is a mod for TF2's `~\tf\config\config.cfg`.
 
 The subdirectory in `~\custom\CustomBinds\` is called `scripts`. This tells TF2 which content folder under `~\tf\` will be modified. In `~\custom\CustomBinds\scripts\`, you will find all the `*.cfg` files that modify TF2's default keybind configuration.
