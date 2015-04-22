@@ -16,6 +16,26 @@ The subdirectory in `~\custom\CustomBinds\` is called `scripts`. This tells TF2 
 
 `autoexec.cfg` should start out as a copy of the default `config.cfg` from `~\tf\config\`. From there, you can modify `autoexec.cfg` to your liking with all the binds you want to have. This will be a 'global' custom bind configuration that affects all classes.
 
+### Custom binds
+A basic keybind is assigned with the following syntax:
+
+```
+// bind <key> <action>
+
+// Pressing G will put the text "lol" in global chat for the following bind:
+bind G "say lol"
+
+// Actions can be chained so a keypress will do more than one thing.
+// The bind below will put "lol" in the global chat and then the playermodel will immediately taunt
+bind G "say lol; taunt"
+
+// Aliases can be created for one or more actions:
+alias Laugh_And_Taunt "say lol; taunt"
+bind G Laugh_And_Taunt
+```
+
+Go on [r/TF2scripts](https://www.reddit.com/r/tf2scripts), the [teamfortress wiki](https://wiki.teamfortress.com/wiki/Scripting) or [google](https://www.google.com/) for more guides and information.
+
 ### Custom binds for individual classes
 You can also customize binds for individual classes to override individual 'default' bind behavior set by `autoexec.cfg`. In this situation, the possible class files are named as follows:
 
