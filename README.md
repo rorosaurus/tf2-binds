@@ -10,11 +10,11 @@ C:\Program Files (x86)\Steam\SteamApps\common\Team Fortress 2\tf\custom
 Then launch TF2.  
 
 ### How it works
-TF2 parses your `~\tf\custom` folder for custom content (sounds, models, scripts, etc). Each subfolder in the `custom` directory represents an individual mod. In effect, CustomBinds is a mod for TF2's `~\tf\config\config.cfg`.
+TF2 parses your `~\tf\custom` folder for custom content (sounds, models, scripts, etc). Each subfolder in the `custom` directory represents an individual mod. In effect, CustomBinds is a mod for TF2's `~\tf\cfg\config.cfg`.
 
-The subdirectory in `~\custom\CustomBinds\` is called `scripts`. This tells TF2 which content folder under `~\tf\` will be modified. In `~\custom\CustomBinds\scripts\`, you will find all the `*.cfg` files that modify TF2's default keybind configuration.
+The subdirectory in `~\custom\CustomBinds\` is called `scripts`. This tells TF2 which content folder under `~\tf\` will be modified. In `~\custom\CustomBinds\cfg\`, you will find all the `*.cfg` files that modify TF2's default keybind configuration.
 
-`autoexec.cfg` should start out as a copy of the default `config.cfg` from `~\tf\config\`. From there, you can modify `autoexec.cfg` to your liking with all the binds you want to have. This will be a 'global' custom bind configuration that affects all classes.
+`autoexec.cfg` should start out as a copy of the default `config.cfg` from `~\tf\cfg\`. From there, you can modify `autoexec.cfg` to your liking with all the binds you want to have. This will be a 'global' custom bind configuration that affects all classes.
 
 ### Custom binds
 A basic keybind is assigned with the following syntax:
@@ -51,7 +51,7 @@ sniper.cfg
 spy.cfg
 ```
 
-For example, if you just want a special bind for the Medic class which announces to the team that you have an Ubercharge ready that you want to assign to the G key, you would create a `.cfg` file in `~\custom\CustomBinds\scripts\` called `medic.cfg`. This config script will execute when you first select or switch to the Medic class. It is recommended, for reasons elaborated below, that you create the `.cfg` files for all classes pre-populated with at least one special command.
+For example, if you just want a special bind for the Medic class which announces to the team that you have an Ubercharge ready that you want to assign to the G key, you would create a `.cfg` file in `~\custom\CustomBinds\cfg\` called `medic.cfg`. This config script will execute when you first select or switch to the Medic class. It is recommended, for reasons elaborated below, that you create the `.cfg` files for all classes pre-populated with at least one special command.
 
 ```
 // medic.cfg
