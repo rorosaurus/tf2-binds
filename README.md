@@ -1,6 +1,6 @@
 # TF2binds
 
-This is a template mapping of custom keybinds for Team Fortress 2. Includes class-specific binds.
+This is a mapping of custom keybinds for Team Fortress 2. Includes class-specific binds.
 
 ### Applying to TF2 on Windows
 Copy the CustomBinds directory into this directory:  
