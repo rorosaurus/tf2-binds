@@ -1,6 +1,0 @@
-cfg to keep
-
-bind "o" "say ☑ rekt | ☑ rekt | ☑ rekt | ☑ rekt | ☑ rekt | ☑ rekt"
-bind "p" "say ☐ not rekt | ☑ rekt"
-bind "k" "say ¯\(°_o)/¯"
-bind "l" "say ¯\_(ツ)_/¯ "
