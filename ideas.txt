@@ -7,3 +7,6 @@ gg
 im twelve what is this
 x gon givit to ya
 ascii shrug and stuff
+bind "i" "say ☐ Not Rekt ☐ Rekt ☒ Rorosaurus Rekt"
+bind "p" "say Random crits are fair and balanced."
+bind "[" "say 100% skill"
